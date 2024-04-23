@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaushik Music Player</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body style="min-width: 300px; min-height: 300px;">
+
+  <div class="container ">
+    <div class="kaushik p-2 text-center mb-3">
+      <a href="https://wa.me/+917404847039?text=Hii,%20Ankit,%20This%20message%20is%20from%20chrome%20autoplay%20music%20extension."
+        target="_blank">
+        <button class="btn btn-success"><span id="intervalSpan">Music Player</span></button>
+      </a>
+    </div>
+    <form action="" id="service-data-form">
+      <label>
+        <input type="radio" name="option" value="appleMusic"> Apple Music
+      </label><br>
+      <label>
+        <input type="radio" name="option" value="spotify"> Spotify
+      </label><br>
+      <label>
+        <input type="radio" name="option" value="wynk"> WYNK
+      </label><br>
+      <label>
+        <input type="radio" name="option" value="jioSavan"> JIO Savan
+      </label><br>
+      <label>
+        <input type="radio" name="option" value="youtubeMusic"> Youtube Music
+      </label><br>
+      <label>
+        <input type="radio" name="option" value="deezer"> Deezer
+      </label><br>
+      <br>
+      <div class="form-group">
+        <label for="interval-start-input">Interval Start: (in seconds)</label>
+        <input type="number" class="form-control" name="interval-start" id="interval-start-input" value="33">
+      </div>
+      <div class="form-group">
+        <label for="interval-end-input">Interval End: (in seconds)</label>
+        <input type="number" class="form-control" name="interval-end" id="interval-end-input" value="38">
+      </div>
+    </form>
+  </div>
+  <div class="btn-group p-2 d-flex justify-content-between">
+    <button id="startButton" class="btn btn-primary"><i class="fas fa-play"></i> Start Service</button>
+    <button id="stopButton" class="btn btn-danger"><i class="fas fa-stop"></i> Stop Service</button>
+  </div>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
